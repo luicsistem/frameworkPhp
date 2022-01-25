@@ -1,0 +1,14 @@
+Repaso:
+
+Todo arranca en el index.php, este se encarga de llamar a nuestra clase Request,
+esta clase a su vez, se encarga de cargar el controlador necesario de manera dinámica 
+dependiendo de lo que el usuario haya pasado por la URL, ya que logró identificar 
+cuál es el controlador que tiene que llamar, simplemente lo llama, 
+y esta clase está esperando que dicho controlador retorne una instancia de Response para poder mandar la vista.
+
+Response por su parte, dependiendo de lo que hayas establecido en el controlador, se encarga de buscar
+ cuál es la vista que tiene que envíar y cargarla en una variable, para posteriormente imprimir esa variable
+ dentro del template y así cargar de manera dinámica las páginas que van a conservar una estructura HTML en común siempre. 
+Obviamente nuestro controlador retornará una instancia de Request indicando cuál es la vista que queremos.
+
+Y para facilitar todavía más las cosas, podemos usar helpers que se encarguen del “trabajo sucio”, así hacemos código más legible y bonito

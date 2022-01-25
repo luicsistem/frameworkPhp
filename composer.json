@@ -1,0 +1,11 @@
+{
+    "name": "mrcastro/frameplatzi",
+    "description": "proyecto basico",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {},
+    "files": [ "app/helpers.php" ]
+}
